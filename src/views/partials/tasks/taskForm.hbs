@@ -1,0 +1,31 @@
+<div class="card card-body p-4 rounded-20 text-Dark">
+  <h3>Crear contexto</h3>
+  <form action="/tasks/add" method="post">
+
+    {{! Title Input }}
+    <div class="m-3">
+      <label for="title">Nombre</label>
+      <input
+        id="title"
+        class="form-control rounded-20 text-Dark"
+        type="text"
+        name="title"
+        placeholder="Nombre"
+        autofocus
+      />
+    </div>
+
+    {{! Description Input }}
+    <div class="m-3">
+      <label for="description">Contexto</label>
+      <textarea
+        class="form-control rounded-20 text-Dark"
+        name="description"
+        cols="80"
+        placeholder="Describir contexto"
+      ></textarea>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Crear</button>
+  </form>
+</div>
